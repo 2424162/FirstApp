@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/ItemImage" android:paddingTop="10dp" android:layout_width="50dp" android:layout_height="50dp" android:layout_alignParentLeft="true"/>
+    <TextView android:textSize="20dp" android:id="@+id/ItemName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TextView01" android:layout_toRightOf="@+id/ItemImage"/>
+    <TextView android:id="@+id/ItemSize" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TextView02" android:layout_toRightOf="@+id/ItemImage" android:layout_below="@+id/ItemName"/>
+
+    <CheckedTextView
+        android:id="@android:id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkMark="?android:attr/listChoiceIndicatorSingle"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="?android:attr/textColorAlertDialogListItem" />
+</RelativeLayout>
